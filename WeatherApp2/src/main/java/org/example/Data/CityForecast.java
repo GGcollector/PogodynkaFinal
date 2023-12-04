@@ -16,7 +16,16 @@ public class CityForecast extends BaseClass {
         this.windSpeed = windSpeed;
     }
 
-    public Integer getTemperature() {
+    public CityForecast(String country, String city, Integer temperature, Integer pressure, Integer humidity, Integer windDirection, Integer windSpeed) {
+        super(country, city);
+        this.temperature = temperature;
+        this.pressure = pressure;
+        this.humidity = humidity;
+        this.windDirection = String.valueOf(windDirection);
+        this.windSpeed = windSpeed;
+    }
+
+        public Integer getTemperature() {
         return temperature;
     }
 

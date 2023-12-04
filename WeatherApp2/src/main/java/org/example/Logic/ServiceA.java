@@ -26,7 +26,8 @@ public class ServiceA implements LocalizationToFile {
     }
 
     public static void loadCityDataFromFile(String file) throws IOException {
-        System.out.println("odczyt z pliku: " + Files.readAllLines(Path.of(file), StandardCharsets.UTF_8));
+         // todo tutaj chyba trzeba pozmieniać na BufferedReader'a czy coś zeby nie wyswietlał tego w jednej linii tylko rozbijał od nowej linii każdy wpis
+        System.out.println("Oto lista dostępnych miast wraz z ich danymi: " + Files.readAllLines(Path.of(file), StandardCharsets.UTF_8));
     }
 
     public static String getCityName() {
